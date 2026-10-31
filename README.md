@@ -1,139 +1,84 @@
-A professionally restructured and CSS-upgraded Blogger XML template designed for developers who demand high-quality, maintainable, and performant blog themes.
+<div align="center">
 
-## ✨ Features
+<img src="assets/cover.svg" alt="nextNM Blogger Template" width="100%">
 
-- **Restructured HTML**: Logical organization, clear comments, semantic hierarchy
-- **Modern CSS Architecture**: CSS variables, Flexbox/Grid, mobile-first responsive design
-- **Accessibility First**: WCAG 2.1 AA compliant, full keyboard navigation, dark mode support
-- **Performance Optimized**: Minimal CSS (~45KB), zero JavaScript bloat, optimized assets
-- **Developer Friendly**: Well-commented code, clear naming conventions, easy to customize
-- **Production Ready**: Tested across browsers and devices, comprehensive documentation
+# nextNM · Blogger Template
 
-## 🚀 Quick Start
+**Structure, refined.**  
+A professionally restructured and CSS-upgraded Blogger XML template for developers who demand maintainable, performant themes.
 
-1. **Download** the restructured template: `templates/blogger-template-restructured.xml`
-2. **Backup** your current Blogger theme (see [Installation Guide](docs/INSTALLATION.md))
-3. **Upload** the template via Blogger Dashboard → Theme → Edit HTML
-4. **Customize** colors and fonts using CSS variables (see [Usage Guide](docs/USAGE.md))
+[![Live Demo](https://img.shields.io/badge/VIEW%20TEMPLATE-nextNM-3b82f6?style=for-the-badge&labelColor=0f172a)](https://nmstudioo.github.io/nextNM/)
+![Blogger](https://img.shields.io/badge/BLOGGER%20XML-3b82f6?style=flat-square&labelColor=0f172a)
+![License](https://img.shields.io/badge/LICENSE-MIT-64748b?style=flat-square&labelColor=0f172a)
 
-## 📖 Documentation
+[Overview](#overview) · [Features](#features) · [Design](#design-system) · [Structure](#repository-structure)
 
-- **[Installation & Setup](docs/INSTALLATION.md)** — Step-by-step deployment instructions
-- **[Usage & Customization](docs/USAGE.md)** — How to modify colors, fonts, layout
-- **[CSS Structure](docs/CSS-STRUCTURE.md)** — Detailed CSS organization and variables
-- **[Deployment Guide](docs/DEPLOYMENT.md)** — Blogger-specific considerations
-- **[Troubleshooting](docs/TROUBLESHOOTING.md)** — Common issues and solutions
-- **[FAQ](docs/FAQ.md)** — Frequently asked questions
-- **[Contributing](CONTRIBUTING.md)** — How to contribute improvements
-
-## 📋 Requirements
-
-- **Blogger blog** (active, accessible)
-- **Browser**: Chrome, Firefox, Safari, Edge (latest 2 versions)
-- **Knowledge**: Basic HTML/CSS understanding (not required, but helpful)
-
-## 🎨 Customization Examples
-
-### Change Primary Color
-Edit `<b:skin>` in your template:
-```css
-:root {
-  --color-primary: #your-color-hex;
-  --color-primary-light: #lighter-tint;
-  --color-primary-dark: #darker-shade;
-}
-```
-
-### Enable Dark Mode
-The template includes dark mode support:
-```css
-@media (prefers-color-scheme: dark) {
-  /* Dark mode styles auto-apply */
-}
-```
-
-For more examples, see **[examples/](examples/)** folder.
-
-## ✅ What Changed
-
-### Before Restructuring
-- Flat, unorganized HTML structure
-- Minimal comments and unclear section breaks
-- CSS scattered throughout `<b:skin>` without organization
-- No CSS variables or design tokens
-- Limited dark mode support
-- No accessibility considerations
-
-### After Restructuring
-- Logical HTML hierarchy with clear section comments
-- Professional CSS organization (variables → components → responsive)
-- Comprehensive CSS variable system (colors, typography, spacing, shadows)
-- Full WCAG 2.1 AA accessibility compliance
-- Dark mode and high-contrast mode support
-- Mobile-first responsive design
-- Detailed developer documentation
-
-See **[before/after screenshots](assets/screenshots/)**.
-
-## 📊 Statistics
-
-| Metric | Before | After |
-|--------|--------|-------|
-| CSS File Size | ~60KB | ~45KB |
-| Code Comments | Minimal | Comprehensive |
-| CSS Variables | None | 50+ |
-| Accessibility Score | ~70% | ~98% |
-| Mobile Responsiveness | Limited | Full |
-
-## 🛠️ Tools Used
-
-- **XML/CSS**: Text editor (VS Code, Sublime Text, etc.)
-- **Validation**: W3C HTML/CSS validators
-- **Accessibility**: WAVE, axe DevTools, Lighthouse
-- **Testing**: Chrome DevTools, responsive design mode, real devices
-
-## 📝 License
-
-This project is licensed under the **MIT License** — see [LICENSE](LICENSE) file for details.
-
-You are free to:
-- ✅ Use for personal and commercial projects
-- ✅ Modify and customize
-- ✅ Redistribute with attribution
-- ✅ Use in closed-source projects
-
-## 🤝 Contributing
-
-We welcome contributions! Please see **[CONTRIBUTING.md](CONTRIBUTING.md)** for guidelines.
-
-### Ways to Contribute- **Report bugs** via GitHub Issues
-- **Suggest features** or improvements
-- **Submit CSS enhancements**
-- **Improve documentation**
-- **Create examples** or tutorials
-
-## 📞 Support
-
-- **Questions?** Check [FAQ](docs/FAQ.md)
-- **Issues?** See [Troubleshooting](docs/TROUBLESHOOTING.md)
-- **Found a bug?** Open a [GitHub Issue](../../issues)
-- **Have feedback?** Discussions welcome via Pull Requests
-
-## 🙏 Acknowledgments
-
-This template was restructured with:
-- Best practices from professional web development standards
-- Accessibility guidelines (WCAG 2.1 AA)
-- Performance optimization research
-- Community feedback and testing
-
-## 📅 Changelog
-
-See **[CHANGELOG.md](changelog/CHANGELOG.md)** for detailed version history.
+</div>
 
 ---
 
-**Made with ❤️ for developers who care about quality.**
+## Overview
 
-If you find this helpful, please consider giving it a **⭐ Star** on GitHub!
+The original Blogger template was flat, unorganized, and scattered. This repository rebuilds it with a logical HTML hierarchy, a comprehensive CSS variable system, and full WCAG 2.1 AA accessibility compliance.
+
+> [!IMPORTANT]
+> This is a developer-focused template. You should be comfortable editing XML and CSS before using it in production.
+
+| Attribute | Value |
+|:--|:--|
+| **Format** | Blogger XML template |
+| **CSS size** | ~45 KB (down from ~60 KB) |
+| **Accessibility** | WCAG 2.1 AA |
+| **License** | MIT |
+
+---
+
+## Features
+
+- **Restructured HTML:** Logical organization with clear section comments and semantic hierarchy.
+- **Modern CSS architecture:** CSS variables, Flexbox, Grid, mobile-first responsive design.
+- **Accessibility first:** Full keyboard navigation, dark mode, high-contrast support.
+- **Developer friendly:** Well-commented code and clear naming conventions.
+
+---
+
+## Design System — "Architect"
+
+Deep blue with steel-grey neutrals. The design prioritizes readability and structural clarity.
+
+| Role | Face |
+|:--|:--|
+| Display | **Inter Tight** |
+| Body | **Inter** |
+| Data | **JetBrains Mono** |
+
+| Token | Value | Use |
+|:--|:--|:--|
+| `--bg` | `#0f172a` | Page background |
+| `--blue` | `#3b82f6` | Accents, links |
+| `--mut` | `#64748b` | Muted text |
+
+---
+
+## Repository Structure
+
+```text
+nextNM/
+├── index.html          ← template preview
+├── README.md
+├── assets/
+│   ├── cover.svg
+│   └── style.css
+├── docs/
+│   ├── INSTALLATION.md
+│   ├── USAGE.md
+│   └── CSS-STRUCTURE.md
+└── templates/
+    └── blogger-template-restructured.xml
 ```
+
+---
+
+<div align="center">
+<sub>Designed &amp; tuned by <b>Noushad M.</b> · © 2026</sub>
+</div>
